@@ -21,6 +21,7 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.grey,
       ),
       body: Center(
+        // Example of Row and Column 
         child: Container(
           width: 220,
           height: 220,
