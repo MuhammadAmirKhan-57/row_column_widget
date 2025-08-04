@@ -51,6 +51,28 @@ class ContainerScreen extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                 ),),
               ),
+              SizedBox(height: 20),
+              Container(
+                width: 180,
+                height: 180,
+                alignment: Alignment(0, 0),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 6,
+                      spreadRadius: 8,
+                      offset: Offset(4, 6),
+                      color: Colors.blueGrey,
+                    ),
+                  ]
+                ),
+                child: Text('Box Shadow',style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500,
+                ),),
+              ),
             ],
           ),
         ),
