@@ -23,6 +23,8 @@ class ColumnScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            //Here is example of column screen where it is verticle axis of the screen 
+            //First i have container then name and the address
             Container(
               width: 50,
               height: 50,
