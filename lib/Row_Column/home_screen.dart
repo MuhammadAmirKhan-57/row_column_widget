@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:row_column_widget/Row_Column/column_screen.dart';
+import 'package:row_column_widget/Row_Column/row_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,12 +12,12 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         title: Text(
           'Home Screen',
-           style: TextStyle(
+          style: TextStyle(
             fontSize: 16,
             color: Color(0xffFFFFFF),
             fontWeight: FontWeight.w600,
-            )
-            ),
+          ),
+        ),
         backgroundColor: Colors.grey,
       ),
       body: Center(
@@ -26,14 +28,13 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ElevatedButton(onPressed: () {}, child: Text('Column Screen')),
+              ElevatedButton(onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => ColumnScreen())), child: Text('Column Screen')),
               SizedBox(height: 15),
-              ElevatedButton(onPressed: () {}, child: Text('Row Screen')),
+              ElevatedButton(onPressed: ()  => Navigator.push(context, MaterialPageRoute(builder: (context) => RowScreen())), child: Text('Row Screen')),
             ],
           ),
         ),
       ),
-      
     );
   }
 }
