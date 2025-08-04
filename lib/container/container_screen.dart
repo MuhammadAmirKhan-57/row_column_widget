@@ -36,6 +36,21 @@ class ContainerScreen extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                 ),),
               ),
+              SizedBox(height: 20),
+              Container(
+                width: 160,
+                height: 160,
+                alignment: Alignment(0, 0),
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey,
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                child: Text('Circuler', style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500,
+                ),),
+              ),
             ],
           ),
         ),
